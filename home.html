@@ -1,10 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="Logo">
+            </a>
+            <div class="menu-icon" id="menu-icon">
+                <img class="menu-icon" src="images/hamburger_icon.jpg" alt="Menu Icon">
+                
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link active underline" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Products</a></li>
+                <li><a class="nav-link" href="#">Staff</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1 class="WelcomeMessage">Welcome to Image Gallery</h1>
+    </div>
+    <div class="gallery">
+        <div class="gallery-thumbnails">
+            <img src="images/gamer.webp" alt="Image 1" class="thumbnail">
+            <img src="images/programmer.jpg" alt="Image 2" class="thumbnail">
+            <img src="images/skating.png" alt="Image 3" class="thumbnail">
+            
+        </div>
+        <div class="gallery-viewer">
+            <img src="images/gamer.webp" alt="Image Viewer" id="main-image">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
